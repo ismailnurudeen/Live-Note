@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="materialize/css/materialize.min.css">
+</head>
+
+<body id="body" class="container">
+  <div class="main">
+    <div class=" card-panel wrapper">
+      <button class="addBtn btn-floating btn-large green waves-effect waves-circle halfway-fab">&plus;</button>
+      <ul class="note-list container black-text">
+
+      </ul>
+
+      <div class="editView">
+        <form class=" center">
+          <div class=" input-field black-text">
+            <input class="" id="title" type="text" value=""/>
+            <label for="title">Title</label>
+          </div>
+          <div class=" input-field black-text">
+            <textarea class="materialize-textarea" id="note" type="text" value=""></textarea>
+            <label for="note">Note</label>
+          </div>
+        </form>
+        <form class="center">
+          <div class="input-field">
+            <input type="range" value="20" id="font-size">
+            <label for="font-size">Font-size</label>
+          </div>
+          <div class="input-field">
+            <label for="bg-color">Background Color</label>
+            <input type="color" id="bg-color">
+          </div>
+          <div class="input-field">
+            <label for="txt-color">Text Color</label>
+            <input type="color" id="txt-color">
+          </div>
+          <div class="input-field">
+            <label for="hbg-color">header Color</label>
+            <input type="color" id="hbg-color">
+          </div>
+          <div class="">
+            <label for="font-family">Font-Family</label>
+            <select name="f-family" id="font-family">
+              <option value="0">Sans-serif</option>
+              <option value="1">Monospace</option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+              <option value="6"></option>
+            </select>
+          </div>
+        </form>
+        <button onclick="addNote()" class=" align-center waves-effect btn" id="save">Save</button>
+      </div>
+    </div>
+  
+
+    <!-- <div id="myModal" class="modula">
+        <div class="modal-content">
+          <header class="modal-header blue-grey">
+            <span class="closeBtn">&times;</span>
+          </header>
+          <section class="modal-body">
+
+          </section>
+          <footer class="modal-footer blue-grey">
+            <h4>Teen Mutant Coder &copy; FreeCodeCamp challenges</h4>
+          </footer>
+        </div>
+      </div> -->
+  </div>
+
+
+
+
+  <script src="jquery/jquery-1.11.3.min.js"></script>
+  <script src="materialize/js/materialize.min.js"></script>
+  <script src="js/scripts.js">
+  </script>
+</body>
+
+</html>
